@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Finance Bank</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="app.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <img src="./logo.png" alt="logo" width="50px" height="50px" />
+      <div class="header-content">
+        <a href="" class="btn transfer-btn">MONEY TRANSFER</a>
+        <a href="" class="btn loan-btn">REQUEST LOAN</a>
+
+        <a href="" class="btn" id="logout-btn"
+          >Logout<i class="fa fa-power-off" aria-hidden="true"></i
+        ></a>
+      </div>
+    </header>
+    <main>
+      <div class="sidebar">
+        <div class="icon-box active">
+          <i class="fa-solid fa-house"></i>
+          <p>Dashboard</p>
+        </div>
+        <div class="icon-box">
+          <i class="fa-solid fa-wallet"></i>
+          <p>Accounts</p>
+        </div>
+        <div class="icon-box">
+          <i class="fa-solid fa-piggy-bank"></i>
+          <p>Savings</p>
+        </div>
+        <div class="icon-box">
+          <i class="fa-brands fa-cc-mastercard"></i>
+          <p>Cards</p>
+        </div>
+        <div class="icon-box">
+          <i class="fa-solid fa-money-bill-wave"></i>
+          <p>Loans</p>
+        </div>
+        <div class="icon-box">
+          <i class="fa-solid fa-chart-line"></i>
+          <p>Investments</p>
+        </div>
+      </div>
+
+      <div class="dashboard">
+        <div class="welcome">
+          <div class="welcome-message">
+            <p class="welcome-text">Hello, <span class="name">Ella</span></p>
+            <p class="sub-text">Have a rock n' roll day!</p>
+          </div>
+          <img src="./dance.png" alt="" width="80px" height="80px" />
+        </div>
+        <div class="overview">
+          <p class="summary">Account Summary</p>
+          <p class="balance">$1234567</p>
+          <p>
+            As of <span class="date"> 11/02/22,</span>
+            <span class="time"> 11:02</span>
+          </p>
+          <div id="chart">
+              
+          </div>
+        </div>
+        <div class="transactions">
+          <p class="history-text">Recent transactions</p>
+          <div class="transaction">
+            <div class="credit-text">
+              <i class="fa-solid fa-down-long"></i>
+              <p class="credit">Credit</p>
+            </div>
+            <p>
+              <span class="date"> 11/02/22,</span>
+              <span class="time"> 11:02</span>
+            </p>
+            <p class="credit-amount">+$3200</p>
+          </div>
+          <div class="transaction">
+            <div class="debit-text">
+              <i class="fa-solid fa-up-long"></i>
+              <p class="debit">Debit</p>
+            </div>
+            <p>
+              <span class="date"> 11/02/22,</span>
+              <span class="time"> 11:02</span>
+            </p>
+            <p class="debit-amount">-$3200</p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
